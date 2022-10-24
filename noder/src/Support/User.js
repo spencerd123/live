@@ -10,7 +10,7 @@ const [user,setUser] = useState({})
 const [title,setTitle] = useState("");
 
 useEffect(()=>{
-Axios.get(`http://localhost:3306/api/getFromId/${UserID}`).then((data)=>{
+Axios.get(`http://localhost:3002/api/getFromId/${UserID}`).then((data)=>{
     console.log(data)
 setUser({
         title: data.data[0].title,
@@ -23,7 +23,7 @@ setUser({
 },[UserID]);
 
 const deleteUser = (id) => {
-    Axios.delete(`http://localhost:3306/api/delete/${UserID}`).then((response)=>{
+    Axios.delete(`http://localhost:3002/api/delete/${UserID}`).then((response)=>{
         alert("you deleted a user")
     })
 }

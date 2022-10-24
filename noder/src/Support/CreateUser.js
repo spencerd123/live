@@ -6,29 +6,29 @@ function CreateUser() {
 
     const [firstName, setFirstName] = useState("");
     const [sport, setSport] = useState("");
-    const [text, setText] = useState("");
+    const [userBio, setUserBio] = useState("");
 
     const submitPost = () => {
-        Axios.post('http://localhost:3306/api/create', { firstName: firstName, sport: sport, text: text })
+        Axios.post('http://localhost:3002/api/create', { firstName: firstName, sport: sport, userBio: userBio })
     }
 
     return (
         <div className="CreatePost">
             <div className="uploadPost">
                 <label>First Name: </label>
-                <input type="text" onChange={(e) => {
+                <input type="userBio" onChange={(e) => {
                     setFirstName(e.target.value)
                 }} />
                 <label>Sport: </label>
-                <input type="text" onChange={(e) => {
+                <input type="userBio" onChange={(e) => {
                     setSport(e.target.value)
                 }} />
                 <label>Looking to work on: </label>
-                <textarea
+                <userBioarea
                     onChange={(e) => {
-                        setText(e.target.value)
+                        setUserBio(e.target.value)
                     }}
-                ></textarea>
+                ></userBioarea>
                 <button onClick={submitPost}>Submit Post</button>
             </div>
         </div>
