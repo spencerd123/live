@@ -9,7 +9,7 @@ function Users() {
 
     const [userList, setUserList] = useState([]);
 
-    const navigate = useNavigate();
+    const navigate = useNavigate(); 
 
     useEffect(() => {
         http.get("/get").then((data) => {
