@@ -7,12 +7,11 @@ import {
   ReactDOM,
   useNavigate,
 } from "react-router-dom";
-import App from "../App";
 
 const Landing = () => {
   const navigate = useNavigate();
-  const nav = document.querySelector("nav")
-  nav.classList.add("nav2")
+
+
 
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -35,11 +34,6 @@ const Landing = () => {
     pass: "invalid username or password",
   };
 
-  const removeNav = (event) => {
-    event.preventDefault();
-
-    App.setNav(false);
-  };
 
   const handleSubmit = (event) => {
     //Prevent page reload
@@ -126,9 +120,14 @@ const Landing = () => {
     </div>
   );
 
+  const hideNav = () => {
+    const nav = document.querySelector("nav")
+    nav.classList.add("nav2")
+  }
+
 
   return (
-    <div className="app">
+    <div className="app" onMouseMove={hideNav}>
       {SignInInformation}
       <div className="login-form">
         {isSubmitted ? TraverseToHomePage : renderForm}
