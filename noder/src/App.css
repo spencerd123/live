@@ -42,3 +42,187 @@ nav {
     transform: rotate(360deg);
   }
 }
+
+.app {
+  font-family: sans-serif;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  flex-direction: row;
+  gap: 20px;
+  height: inherit;
+  margin-right: 10rem;
+  margin-top: 100px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f8f9fd;
+}
+
+input[type="text"],
+input[type="password"] {
+  height: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #01d28e;
+  border: 1px solid #01d28e;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+input[type="submit"]:hover {
+  background: #6cf0c2;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+
+.list-container {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.LeftHandWelcome {
+  background-color: #01d28e;
+  align-content: left;
+  justify-content: left;
+  display: flex;
+  width: 25rem;
+  padding-right: 5rem;
+  margin-right: 10rem;
+  flex-direction: column;
+}
+
+.WelcomeTitle {
+  font-size: 30px;
+  font-weight: 800;
+  
+}
+
+.forgot {
+  margin-top: 10px;
+  justify-content: center;
+  display: flex;
+  font-size: 12px;
+}
+
+.LeftWelcomeInformation {
+  padding-top: 1rem;
+}
+
+.SignUp {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #04452f;
+  border: 1px solid #04452f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.LoginToHome {
+  margin: 2rem;
+  white-space: nowrap;
+}
+
+.SignUpContent {
+  display: flex;
+  background-color: #01d28e;
+  border: 1px solid #04452f;
+  width: 30rem;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  white-space: nowrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.FirstNameLabelSignUp {
+  padding: 1rem;
+}
+
+.FirstNameTextBoxSignUp {
+
+}
+
+.LastNameLabelSignUp {
+  padding: 1rem;
+}
+
+.UserNameLabelSignUp {
+  padding: 1rem;
+}
+
+.PasswordLabelSignUp {
+  padding: 1rem;
+}
+
+.GenderLabelSignUp {
+  padding: 1rem;
+}
+
+.GenderDropDownSignUp {
+  width: 120px;
+  text-align: center;
+}
+
+.SportLabelSignUp {
+  padding: 1rem;
+}
+
+.SportDropDownSignUp {
+  width: 120px;
+  text-align: center;
+}
+
+.ExperienceLabelSignUp {
+  padding: 1rem;
+}
+
+.ExperienceDropDownSignUp {
+  width: 120px;
+  text-align: center;
+}
+
+.SubmitSignUp {
+  margin-left: 20rem;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  background: #04452f;
+  border: 1px solid #04452f;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
