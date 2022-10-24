@@ -29,7 +29,7 @@ function App() {
             <Link to="/users" className='headerlink-title'>Users</Link>
           </nav>
         </div>
-        <hr />
+        <hr className='nav2'/>
         <div className='onetwo'>
           <Routes>
             <Route exact path='/' element={<Landing />} />
