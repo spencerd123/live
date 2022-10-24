@@ -6,6 +6,12 @@ nav {
   display: flex;
   justify-content: space-around;
   color: black;
+  background-color: #01d28e;
+}
+
+.nav2 {
+  height: 0;
+  font-size: 0;
 }
 
 .App-logo {

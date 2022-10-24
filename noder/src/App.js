@@ -30,7 +30,7 @@ function App() {
           </nav>
         </div>
         <hr />
-        <div>
+        <div className='onetwo'>
           <Routes>
             <Route exact path='/' element={<Landing />} />
             <Route exact path='/home' element={<Home />} />

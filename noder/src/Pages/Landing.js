@@ -11,6 +11,8 @@ import App from "../App";
 
 const Landing = () => {
   const navigate = useNavigate();
+  const nav = document.querySelector("nav")
+  nav.classList.add("nav2")
 
   const [errorMessages, setErrorMessages] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
